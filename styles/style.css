@@ -131,7 +131,7 @@ footer {
     width:483.87px;
     height:213px;
     position:relative;
-    left:475px;
+    left:35%;
 }
 .footer-image img{
     width:100%;
@@ -164,8 +164,8 @@ footer {
 @media only screen and (max-width:688px) {
     /* header styles change */
     .header {
-        height:1000px;
-        grid-template-columns: repeat(1, 0.4fr);
+        height: 900px;
+        grid-template-columns: repeat(1, 1fr);
     }
     .copa-america {
         margin-top:50px;
