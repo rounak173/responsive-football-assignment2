@@ -165,7 +165,7 @@ footer {
     /* header styles change */
     .header {
         height:1000px;
-        grid-template-columns: repeat(1, 0.8fr);
+        grid-template-columns: repeat(1, 0.4fr);
     }
     .copa-america {
         margin-top:50px;
@@ -178,7 +178,7 @@ footer {
     .banner img {
         margin-top:0px;
         margin-left:15px;
-        width:80%;
+        width:90%;
     }
     /* players styles change */
     .players {
