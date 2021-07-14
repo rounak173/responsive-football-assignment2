@@ -38,12 +38,12 @@ header {
     margin-top:0;
 }
 .copa-america p {
-    width:168px;
-    height:44px;
+    width:128px;
+    height:24px;
     font-size:16px;
     font-family: 'Poppins', sans-serif;
     background-color:#E02C6D;
-    padding:40px 10px 28px 70px;
+    padding:20px 10px 20px 30px;
     overflow:hidden;
 }
 .header:hover p {
@@ -51,8 +51,8 @@ header {
     transition:transform 2s;
 }
 .banner img {
-    width:388px;
-    height:428px;
+    width:556px;
+    height:438px;
     margin-top:135px;
 }
 /* players styles  */
@@ -108,15 +108,18 @@ header {
     transform:scale(1.4);
 }
 /* also visit styles */
+.also-visit {
+    background-color: tomato;
+    width:100%;
+}
 .links {
     display:flex;
     flex-direction: column;
-    background-color:white;
     margin-bottom:100px;
 }
 .links a {
     text-decoration:none;
-    color:black;
+    color:darkblue;
     font-size:60px;
     text-align:center;
 }
@@ -162,7 +165,7 @@ footer {
     /* header styles change */
     .header {
         height:1000px;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 0.8fr);
     }
     .copa-america {
         margin-top:50px;
@@ -185,6 +188,10 @@ footer {
     /* website partner styles change */
     .website-partner {
         height:750px;
+        width:100%;
+    }
+    .heading{
+        font-size:70px;
     }
     .partner-logo {
         flex-direction: column;
