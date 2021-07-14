@@ -19,25 +19,23 @@ header {
     background-color:#2d25a0;
     height:677px;
     width:100%;
-    display:flex;
-    align-items: center;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap:186px;
     margin-bottom:70px;
     overflow:hidden;
-}
-.header:hover {
-    background-color:brown;
-    transform:scale(1.1);
-    transition:transform 1s ease-in-out;
 }
 .copa-america {
     color:white;
     display:flex;
-    flex-direction:column;
-    align-items: flex-start;
+    flex-direction: column;
     margin-left:156px;
+    margin-top:165px;
 }
 .copa-america h1 {
     font-size:64px;
+    margin-bottom:11px;
+    margin-top:0;
 }
 .copa-america p {
     width:168px;
@@ -46,11 +44,16 @@ header {
     font-family: 'Poppins', sans-serif;
     background-color:#E02C6D;
     padding:40px 10px 28px 70px;
+    overflow:hidden;
 }
-
+.header:hover p {
+    transform: scale(1.3);
+    transition:transform 2s;
+}
 .banner img {
     width:388px;
     height:428px;
+    margin-top:135px;
 }
 /* players styles  */
 .players {
@@ -150,4 +153,53 @@ footer {
     font-weight: 400;
     font-size:18px; 
     margin-left:160px;
+}
+
+/* media queries */
+
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    /* header styles change */
+    .header {
+        height:1000px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .copa-america {
+        margin-top:50px;
+        margin-left:16px;
+        margin-bottom:0;
+    }
+    .copa-america h1 {
+        font-size:36px;
+    }
+    .banner img {
+        margin-top:0px;
+        margin-left:15px;
+        width:80%;
+    }
+    /* players styles change */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left:15px;
+    }
+    /* website partner styles change */
+    .website-partner {
+        height:750px;
+    }
+    .partner-logo {
+        flex-direction: column;
+    }
+    /* footer styles change*/
+    footer {
+        position:static;
+        margin-left:15px;
+        width:80%;
+    }
+    .footer-icons {
+        margin-left:40px;
+        margin-bottom:10px;
+    }
+    .copyright {
+        margin-left:40px;
+    }
 }
